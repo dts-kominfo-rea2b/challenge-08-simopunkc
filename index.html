@@ -5,11 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge - DOM</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: violet;
+      }
+      #app {
+        margin: 100px auto 0;
+        padding: 35px 50px;
+        text-align: center;
+        background-color: white;
+        max-width: 30%;
+        border-radius: 25px;
+      }
+      #todo-title {
+        margin: 10px 0 40px;
+      }
+      #todo-title span {
+        background-color: aqua;
+        padding: 0 20px;
+      }
+      #todo-subtitle {
+        margin: 20px auto 10px;
+      }
+      #todo-input {
+        width: 70%;
+        padding: 10px;
+        display: inline;
+        border: 1px solid black;
+        border-radius: 3px;
+        outline: none;
+      }
+      #todo-input:focus {
+        box-shadow: 0px 0px 5px 2px blue;
+      }
+      #todo-submit {
+        display: inline;
+      }
+      #todo-output {
+        display: block;
+        margin-top: 50px;
+        text-align: left;
+      }
+      #todo-output li {
+        padding: 10px 0;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
       <!-- TODO: Buatlah sebuah header dengan id todo-title -->
-      <div id="todo-title">To-Do List</div>
+      <h1 id="todo-title"><span>To-Do List</span></h1>
       <!-- TODO: Buatlah sebuah subtitle dengan id todo-subtitle -->
       <div id="todo-subtitle">~ Today I need to ~</div>
 
